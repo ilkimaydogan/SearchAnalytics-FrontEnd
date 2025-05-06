@@ -1,0 +1,257 @@
+/* src/App.css */
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.App-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.App-header h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nav-bar button {
+  background-color: transparent;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex: 1;
+  max-width: 200px;
+}
+
+.nav-bar button:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-bar button.active {
+  background-color: #4285f4;
+  color: white;
+  font-weight: bold;
+}
+
+/* Search Form Styles */
+.search-form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4285f4;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #3367d6;
+}
+
+button[type="submit"]:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Search Results Container */
+.search-results-container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-results-container h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Search History Styles */
+.search-history-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-history-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-history-list {
+  list-style: none;
+  padding: 0;
+}
+
+.search-history-item {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.search-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-items: center;
+}
+
+.search-header:hover {
+  background-color: #e8e8e8;
+}
+
+.search-info {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.dropdown-icon {
+  font-size: 18px;
+  color: #666;
+}
+
+.search-results {
+  padding: 20px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+}
+
+.search-results h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.results-table th,
+.results-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.results-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.results-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.matching-result {
+  background-color: #e8f0fe;
+}
+
+.matching-result:hover {
+  background-color: #d1e3fa !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .search-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .search-info {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  
+  .dropdown-icon {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+  
+  .results-table {
+    font-size: 14px;
+  }
+}
