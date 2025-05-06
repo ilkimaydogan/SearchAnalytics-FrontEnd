@@ -5,8 +5,8 @@ function App() {
   const [activeTab, setActiveTab] = useState('searchForm');
   const [searchData, setSearchData] = useState({
     searchEngineId: 1, // Default to Google (based on your seeded data)
-    targetUrl: '',
-    keyword: '',
+    targetUrl: 'https://www.infotrack.co.uk',
+    keyword: 'land registry searches',
     topNResult: 100 // Default as per your model
   });
   const [message, setMessage] = useState('');
